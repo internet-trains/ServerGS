@@ -1,0 +1,1 @@
+STR_NOT_MP_WARNING :The ServerGS Game Script is intended to be used on a multi player server. The script will not do anything in non-multiplayer games.
