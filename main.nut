@@ -19,7 +19,7 @@
  */
 
 /** Import SuperLib for GameScript **/
-import("util.superlib", "SuperLib", 40);
+import("util.superlib", "SuperLib", 36);
 Log <- SuperLib.Log;
 Helper <- SuperLib.Helper;
 Story <- SuperLib.Story;
