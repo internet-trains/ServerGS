@@ -4,8 +4,8 @@ import re
 from subprocess import Popen,PIPE
 
 # == Settings ==
-openttd_path = "../.."
-gs_path = "../../../src/script/api/game"
+openttd_path = "."
+gs_path = "/openttd/src/script/api/game"
 # ==============
 
 # Open output file before changing current path
@@ -23,7 +23,7 @@ os.chdir(openttd_path)
 # 		version = r.group(1)
 # 		break
 
-version = "(TODO)"
+version = "pro gamer"
 
 # -- Print header in output .nut file
 f_out.write("/*\n")
@@ -35,7 +35,7 @@ f_out.write("g_symbols_version <- \"" + version + "\";\n")
 f_out.write("g_symbols <- [\n")
 
 # -- Scan all .sq files for the GS API in the OpenTTD source code
-os.chdir(openttd_path + "/" + gs_path)
+os.chdir(gs_path)
 for file_name in glob.glob("*.sq"):
 
 	class_name = None
