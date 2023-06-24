@@ -5,7 +5,7 @@ from subprocess import Popen,PIPE
 
 # == Settings ==
 openttd_path = "."
-gs_path = "/openttd/src/script/api/game"
+gs_path = "/openttd/build/generated/script/api/game"
 # ==============
 
 # Open output file before changing current path
